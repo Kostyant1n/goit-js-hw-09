@@ -10,8 +10,8 @@ btnStartElement.addEventListener('click', function () {
   timerId = setInterval(() => {
     document.body.style.backgroundColor = getRandomHexColor();
   }, 1000);
-  btnStopElement.removeAttribute('disabled');
   btnStartElement.setAttribute('disabled', true);
+  btnStopElement.removeAttribute('disabled');
 });
 
 btnStopElement.addEventListener('click', () => {
