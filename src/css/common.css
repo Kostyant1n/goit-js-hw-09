@@ -18,11 +18,38 @@ img {
 }
 
 .timer {
-  display: block;
-  width: 20%;
-  background-color: #2f4f4f;
-  color: #00ff7f;
-  border: 4px outset #ffa500;
+  display: flex;
+  max-height: 45px;
+  width: 11%;
+  background-color: #2f324f;
+  color: #0099ff;
+  border: 6px outset #ffa500;
   padding: 5px 20px;
   text-align: center;
+  margin-top: 20px;
+}
+
+.timer .label {
+  position: absolute;
+  visibility: hidden;
+}
+
+.timer .value {
+  margin-right: 20px;
+}
+
+.field {
+  position: relative;
+  text-align: left;
+}
+.field:not(:last-child)::before {
+  display: block;
+  content: ':';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-size: 14px;
+  padding-bottom: 2px;
+  padding-left: 15px;
 }
